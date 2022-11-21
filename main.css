@@ -1,0 +1,316 @@
+/* CSS reset*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My rules */
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+a,
+a:focus,
+a:active {
+	color: #fff;
+	text-decoration: none;
+	/* UNDERLINE ANIMATION */
+	background-image: linear-gradient(#fff, #fff);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 0.1em;
+	transition: background-size 0.3s;
+}
+
+a:hover,
+a:focus {
+	background-size: 100% 0.1em;
+}
+
+html {
+	height: 100%;
+	min-height: 100%;
+	background-color: #191919;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/StockSnap_POIHJNTKDB_1080.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+body {
+	height: 100%;
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+	letter-spacing: -1px;
+	display: flex;
+}
+
+.container {
+	width: 80%;
+	margin: 90px auto;
+	font-size: min(max(30px, 8vw), 45px);
+}
+
+.header {
+	font-family: "Open Sans";
+	text-align: center;
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1920 - 300)));
+}
+
+.maindomain {
+	font-weight: 600;
+	font-size: min(max(34px, 10vw), 60px);
+	/* font-size: min(max(34px, 10vw), 60px); */
+}
+
+.break {
+	line-height: calc(1.6em + (1.5 - 1.2) * ((100vw - 300px) / (1920 - 300)));
+}
+
+.available {
+	/* font-style: italic; */
+	font-weight: 300;
+	font-size: min(max(34px, 10vw), 55px);
+}
+
+.otherdomains {
+	font-size: min(max(35px, 7vw), 50px);
+	margin-top: clamp(10px, 14px, 15px);
+	font-weight: 600;
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1920 - 300)));
+}
+
+.pitch {
+	margin-top: 120px;
+	font-size: min(max(25px, 6vw), 33px);
+	font-weight: 300;
+	line-height: calc(1.7em + (1.5 - 1.2) * ((100vw - 300px) / (1920 - 300)));
+	text-align: left;
+}
+
+.pitch a {
+	font-weight: 500;
+	font-style: italic;
+}
+
+.cta {
+	font-family: "IBM Plex Sans", sans-serif;
+	margin-top: 85px;
+	font-size: min(max(30px, 9vw), 65px);
+	font-weight: 400;
+	line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 300px) / (1920 - 300)));
+	text-align: center;
+	letter-spacing: -2px;
+}
+
+.cta a {
+	font-weight: 600;
+}
+
+.disclaimer {
+	font-size: 14px;
+	text-align: center;
+}
+
+.preloader {
+	align-items: center;
+	background: rgb(10, 10, 10);
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	top: 0;
+	transition: opacity 0.3s linear;
+	width: 100%;
+	z-index: 9999;
+}
+
+@media (max-width: 450px) {
+	html {
+		background-position: right;
+	}
+
+	.container {
+		margin-top: 3em;
+		width: 90%;
+	}
+
+	.available {
+		font-weight: 300;
+	}
+
+	.cta {
+		padding-bottom: 2em;
+		text-align: left;
+	}
+}
+
+@media (min-width: 451px) and (max-width: 1438px) {
+	html {
+		background-position: right;
+	}
+
+	.container {
+		width: 90%;
+	}
+
+	.cta {
+		padding-bottom: 2em;
+		text-align: left;
+	}
+}
+
+@media (min-width: 1439px) and (max-width: 1664px) {
+	html {
+		background-position: center;
+	}
+
+	.cta {
+		padding-bottom: 2em;
+	}
+}
+
+@media (min-width: 1665px) {
+	html {
+		background-position: center;
+	}
+
+	.break {
+		display: none;
+	}
+
+	.header {
+		font-style: normal;
+	}
+
+	.available {
+		/* font-weight: 300; */
+		/* font-style: normal; */
+	}
+
+	.pitch {
+		text-align: center;
+	}
+}
