@@ -173,7 +173,6 @@ body {
 }
 
 .header {
-	font-family: "Open Sans";
 	text-align: center;
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1920 - 300)));
 }
