@@ -153,7 +153,7 @@ html {
 	height: 100%;
 	min-height: 100%;
 	background-color: #191919;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/StockSnap_POIHJNTKDB_1080.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(images/StockSnap_POIHJNTKDB_1080.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -180,7 +180,6 @@ body {
 .maindomain {
 	font-weight: 600;
 	font-size: min(max(34px, 10vw), 60px);
-	/* font-size: min(max(34px, 10vw), 60px); */
 }
 
 .break {
@@ -205,7 +204,7 @@ body {
 	font-size: min(max(25px, 6vw), 33px);
 	font-weight: 300;
 	line-height: calc(1.7em + (1.5 - 1.2) * ((100vw - 300px) / (1920 - 300)));
-	text-align: left;
+	text-align: center;
 }
 
 .pitch a {
@@ -227,11 +226,6 @@ body {
 	font-weight: 600;
 }
 
-.disclaimer {
-	font-size: 14px;
-	text-align: center;
-}
-
 .preloader {
 	align-items: center;
 	background: rgb(10, 10, 10);
@@ -248,6 +242,7 @@ body {
 
 @media (max-width: 450px) {
 	html {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/StockSnap_POIHJNTKDB_1080.jpg);
 		background-position: right;
 	}
 
@@ -262,12 +257,12 @@ body {
 
 	.cta {
 		padding-bottom: 2em;
-		text-align: left;
 	}
 }
 
 @media (min-width: 451px) and (max-width: 1438px) {
 	html {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/StockSnap_POIHJNTKDB_1080.jpg);
 		background-position: right;
 	}
 
@@ -277,7 +272,6 @@ body {
 
 	.cta {
 		padding-bottom: 2em;
-		text-align: left;
 	}
 }
 
@@ -307,9 +301,5 @@ body {
 	.available {
 		/* font-weight: 300; */
 		/* font-style: normal; */
-	}
-
-	.pitch {
-		text-align: center;
 	}
 }
