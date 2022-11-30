@@ -181,7 +181,7 @@ body {
 	font-weight: 600;
 	font-size: min(max(34px, 10vw), 60px);
 	background: #694bcf;
-	background: linear-gradient(to right, #694bcf 10%, #ff2200 100%);
+	background: linear-gradient(to right, #694bcf 20%, #ac040c 95%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -202,7 +202,7 @@ body {
 	font-weight: 600;
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1920 - 300)));
 	background: #694bcf;
-	background: linear-gradient(to left, #694bcf 0%, #ff2200 100%);
+	background: linear-gradient(to left, #694bcf 20%, #ff2200 90%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -227,7 +227,14 @@ body {
 	font-weight: 400;
 	line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 300px) / (1920 - 300)));
 	text-align: center;
-	letter-spacing: -2px;
+	letter-spacing: -0.05em;
+}
+
+.findout {
+	background: #694bcf;
+	background: linear-gradient(to right, #694bcf 20%, #ac040c 95%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .cta a {
