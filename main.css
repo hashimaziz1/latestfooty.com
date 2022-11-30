@@ -231,8 +231,8 @@ body {
 }
 
 .findout {
-	background: #694bcf;
-	background: linear-gradient(to right, #694bcf 20%, #ac040c 95%);
+	background: #ac040c;
+	background: linear-gradient(to right, #ac040c 0%, #694bcf 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
