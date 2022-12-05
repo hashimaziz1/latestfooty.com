@@ -6,6 +6,27 @@
 		<title>This domain is available for sale</title>
 		<link rel="stylesheet" type="text/css" href="main.css" />
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,500,600,700|Open+Sans:200,200i,300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet" />
+
+		<!-- Reddit Pixel -->
+		<script>
+			!(function (w, d) {
+				if (!w.rdt) {
+					var p = (w.rdt = function () {
+						p.sendEvent ? p.sendEvent.apply(p, arguments) : p.callQueue.push(arguments);
+					});
+					p.callQueue = [];
+					var t = d.createElement("script");
+					(t.src = "https://www.redditstatic.com/ads/pixel.js"), (t.async = !0);
+					var s = d.getElementsByTagName("script")[0];
+					s.parentNode.insertBefore(t, s);
+				}
+			})(window, document);
+			rdt("init", "t2_ufv874nl", { optOut: false, useDecimalCurrencyValues: true, aaid: "<AAID-HERE>", email: "<EMAIL-HERE>", externalId: "<EXTERNAL-ID-HERE>", idfa: "<IDFA-HERE>" });
+			rdt("track", "PageVisit");
+		</script>
+		<!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
+		<!-- End Reddit Pixel -->
+
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-MZ81YLTTDG"></script>
 		<script>
