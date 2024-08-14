@@ -178,10 +178,10 @@ body {
 }
 
 .maindomain {
-	font-weight: 600;
-	font-size: min(max(34px, 10vw), 60px);
-	background: #694bcf;
-	background: linear-gradient(to right, #694bcf 20%, #ac040c 95%);
+	font-weight: 700;
+	font-size: min(max(34px, 10vw), 50px);
+	background: rgba(56, 172, 249, 1);
+	background-image: linear-gradient( 173.1deg,  rgba(226,66,249,0.94) 40.2%, rgba(56, 172, 249, 1) 70.3% );
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -193,16 +193,16 @@ body {
 .available {
 	/* font-style: italic; */
 	font-weight: 300;
-	font-size: min(max(34px, 10vw), 55px);
+/*	font-size: min(max(24px, 10vw), 35px);*/
 }
 
 .otherdomains {
-	font-size: min(max(35px, 7vw), 50px);
+	font-size: min(max(30px, 7vw), 40px);
 	margin-top: clamp(10px, 14px, 15px);
-	font-weight: 600;
+	font-weight: 700;
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1920 - 300)));
-	background: #694bcf;
-	background: linear-gradient(to left, #694bcf 20%, #ff2200 90%);
+	background: rgba(56, 172, 249, 1);
+	background: linear-gradient(to left, rgba(226,66,249,0.94) 40%, rgba(56, 172, 249, 1) 70%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -231,8 +231,9 @@ body {
 }
 
 .findout {
-	background: #ac040c;
-	background: linear-gradient(to right, #ac040c 0%, #694bcf 100%);
+	font-weight:500;
+	background: rgba(56, 172, 249, 1);
+	background: linear-gradient(to right, rgba(56, 172, 249, 1) 0%,  rgba(226,66,249,0.94) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
