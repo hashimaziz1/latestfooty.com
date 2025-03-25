@@ -136,7 +136,6 @@ a:focus,
 a:active {
 	color: #fff;
 	text-decoration: none;
-	/* UNDERLINE ANIMATION */
 	background-image: linear-gradient(#fff, #fff);
 	background-position: 0% 100%;
 	background-repeat: no-repeat;
